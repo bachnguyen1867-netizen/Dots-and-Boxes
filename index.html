@@ -1,32 +1,16 @@
-<!doctype html>
-<html lang="vi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dots and Boxes</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Dots and Boxes</h1>
-
-    <div class="controls">
-      <label>Kích thước hàng (dots): <input id="rows" type="number" min="2" value="3"></label>
-      <label>Kích thước cột (dots): <input id="cols" type="number" min="2" value="3"></label>
-      <button id="startBtn">Bắt đầu</button>
-    </div>
-
-    <div class="status">
-      <div id="turn">Lượt: Người 1 (X)</div>
-      <div id="score">Điểm — Người 1: 0 | Người 2: 0</div>
-    </div>
-
-    <div id="boardWrap">
-      <!-- board sẽ được tạo bằng JS -->
-    </div>
-
-    <div id="result" class="hidden"></div>
-  </div>
+  <h1>Dots and Boxes 🎯</h1>
+  <p>Turn: <span id="turn">Player A</span></p>
+  <div id="board"></div>
+  <p>Score: A = <span id="scoreA">0</span> | B = <span id="scoreB">0</span></p>
 
   <script src="script.js"></script>
 </body>
