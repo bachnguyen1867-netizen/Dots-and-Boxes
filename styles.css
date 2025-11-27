@@ -1,0 +1,24 @@
+:root{
+  --dot-size:10px;
+  --gap:40px;
+  --line-width:6px;
+  --player1:#ff7b7b;
+  --player2:#7bbaff;
+}
+body{font-family: Arial, Helvetica, sans-serif; background:#f4f4f4; margin:20px;}
+.container{max-width:900px;margin:0 auto;background:#fff;padding:18px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.controls{margin-bottom:10px}
+.controls label{margin-right:10px}
+#boardWrap{margin-top:12px; display:flex; justify-content:center; align-items:center;}
+.board{display:grid; position:relative; background:#fff; padding:20px; border:1px solid #ddd;}
+.dot{width:var(--dot-size);height:var(--dot-size);background:#333;border-radius:50%;display:inline-block;}
+.h-line, .v-line{background:transparent;cursor:pointer;transition:background .15s}
+.h-line{height:var(--line-width); margin:calc(var(--gap)/2 - var(--line-width)/2) 0; width:var(--gap); display:inline-block; vertical-align:middle}
+.v-line{width:var(--line-width); height:var(--gap); display:inline-block; vertical-align:middle}
+.h-line.taken, .v-line.taken{cursor:default}
+.box{width:var(--gap);height:var(--gap);display:inline-block;vertical-align:middle;box-sizing:border-box;border:1px solid transparent}
+.player1{background:var(--player1);}
+.player2{background:var(--player2);}
+.hidden{display:none}
+.status{display:flex; gap:12px; align-items:center;}
+#result{margin-top:12px; font-weight:bold; padding:8px}
