@@ -1,5 +1,5 @@
 :root{
-  --dot-size:10px;
+  --ot-size:10px;
   --gap:40px;
   --line-width:6px;
   --player1:#ff7b7b;
@@ -21,4 +21,5 @@ body{font-family: Arial, Helvetica, sans-serif; background:#f4f4f4; margin:20px;
 .player2{background:var(--player2);}
 .hidden{display:none}
 .status{display:flex; gap:12px; align-items:center;}
+
 #result{margin-top:12px; font-weight:bold; padding:8px}
